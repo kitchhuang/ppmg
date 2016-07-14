@@ -26,7 +26,8 @@ params.force_pk = False
 
 #specify the tables you want to generate the model for.
 params.table_list = params.fetch_all_tables_pg(params)
-params.table_list = ["client_kiosk_audio"]
+params.table_list = ["client_store", "client_store_activity", 
+                     "client_store_act_stores", "client_store_act_products"]
 #params.metadata_name = 'ev5_metadata'
 
 bmg = BaseModelGenerator(params)
